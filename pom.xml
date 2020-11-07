@@ -13,6 +13,30 @@
     <description>A plugin that wraps around Intellij ant tasks to build your GUI forms into your builds (http://www.jetbrains.com/idea/features/gui_builder.html#link16)</description>
     <inceptionYear>2006</inceptionYear>
     <url>http://mojo.codehaus.org/ideauidesigner-maven-plugin</url>
+	
+	 <repositories>
+    <repository>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <id>central</id>
+      <name>Maven Repository Switchboard</name>
+      <url>https://repo1.maven.org/maven2</url>
+    </repository>
+  </repositories>
+  <pluginRepositories>
+    <pluginRepository>
+      <releases>
+        <updatePolicy>never</updatePolicy>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <id>central</id>
+      <name>Maven Plugin Repository</name>
+      <url>https://repo1.maven.org/maven2</url>
+    </pluginRepository>
+  </pluginRepositories>
 
     <prerequisites>
         <maven>2.0.4</maven>
