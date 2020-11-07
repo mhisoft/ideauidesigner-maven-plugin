@@ -12,10 +12,17 @@ Usage
 
 The meaningful modifications to this plugin are on the 12.x branch. Make sure to check it out before proceeding.
 
-This plugin is dependent on IntelliJ's javac2.jar, asm4-all.jar, and forms_rt.jar. You'll need to install them into your local maven repo by running:
+1. This plugin is dependent on IntelliJ's javac2.jar, asm4-all.jar, and forms_rt.jar. You'll need to install them into your local maven repo by running:
 
-    ./install-intellij-libs.sh <path to IntelliJ 12.0.4>
+execute  the installideajars.cmd on windows and installideajars.sh on mac/linux
 
-You can then install the plugin locally by doing:
+Or issue the below commands on the command line:
+
+    mvn install:install-file -Dfile="javac2.jar" -DgroupId=com.intellij -DartifactId=javac2 -Dversion=14.0 -Dpackaging=jar
+    mvn install:install-file -Dfile="forms_rt.jar" -DgroupId=com.intellij -DartifactId=forms_rt -Dversion=14.0 -Dpackaging=jar
+    mvn install:install-file -Dfile="asm-all-8.0.1.jar".jar -DgroupId=com.intellij -DartifactId=asm-all -Dversion=14.0 -Dpackaging=jar
+
+
+2.  Install the plugin locally by doing:
 
     mvn install
