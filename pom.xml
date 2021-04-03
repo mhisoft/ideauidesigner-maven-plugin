@@ -38,6 +38,10 @@
     </pluginRepository>
   </pluginRepositories>
 
+  <properties>
+    <project.build.java.target>1.6</project.build.java.target>
+  </properties>
+
     <prerequisites>
         <maven>2.0.4</maven>
     </prerequisites>
